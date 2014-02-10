@@ -41,4 +41,3 @@ function getSubMenuCount(menuItemClass)
 {
 	return $(menuItemClass).children('.subMenuItem').children('li').length
 }
-
