@@ -1,43 +1,40 @@
 function on_load() 
 {
-	resetMenuItemSizes(menuItemCount = getmenuItemCount());
-
-	$('.mainMenuItem').click(function(){
-		$(this).children('.subMenuItem').show();
-		classname = '.' + $(this).attr("class").split(/\s+/)[1]
-		resetMenuItemSizes(menuItemCount += getSubMenuCount(classname));
-	});
-}
-
-function resetMenuItemSizes(menuItemCount)
-{
-	var heightPercent = 100/menuItemCount + '%';
-
-	$('.mainMenuItem, .subMenuItem').animate({
-   		height: heightPercent
-	}, {
-    	duration: 400
-	});
-}
-
-function getmenuItemCount()
-{
-	var count = 0;
-
-	$('.mainMenuitem').each(function(i, obj)
+	$('.mainMenuItem').click(function()
 	{
-		count++; // for the menu item itself
-		$(this).children('.subMenuItem').each(function(i, obj) 
-		{
-			if($(this).css('display') != "none")
-				count++;
-		}); // for its submenus
-	});
+		var currMMI = $(this)
+		var	currSMI =  $(get_submenuItem_class(currMMI))
 
-	return count;
+		if(currMMI.hasClass("clicked"))
+		{
+			currMMI.removeClass("clicked");
+
+			$(currSMI.get().reverse()).each(function(index)
+			{
+				var currSubEl = $(this);
+
+		        setTimeout(function() {
+		            currSubEl.slideUp(75)
+		        }, 75 * index);
+			});
+		}	
+		else
+		{
+			currMMI.addClass("clicked");
+
+			currSMI.each(function(index)
+			{
+				var currSubEl = $(this);
+		        setTimeout(function() {
+		            currSubEl.slideDown(75);
+		        }, 75 * index);
+			});		
+		}
+
+	});
 }
 
-function getSubMenuCount(menuItemClass)
+function get_submenuItem_class(mainMenuItemClass)
 {
-	return $(menuItemClass).children('.subMenuItem').children('li').length
+	return ('.' + 'sub' + $(mainMenuItemClass).attr("class").split(/\s+/)[1]);
 }
