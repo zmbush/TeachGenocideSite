@@ -42,17 +42,17 @@ ul, li
 
 .mainMenuItem
 {
-	height: 6.2%;
-
+	position: relative;
+	height: 6.3%;
 	cursor:pointer
 }
 
 .subMenuitem
 {
-	height: 6.2%;
+	position: relative;
+	height: 6.3%;
 	display: none;
-	
-	cursor:pointer
+	cursor: pointer;
 }
 
 .mainMenuText
@@ -69,21 +69,37 @@ ul, li
 .subMenuText
 {
 	font-family: 'Raleway', sans-serif;
-	font-size: 10px;
+	font-size: 12px;
 
-	display:inline-block;
+	display:inline-block; 
     position: relative;
-    top: 50%; 
+    top: 40%; 
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
 
-.menuline
+.linebox
 {
-	width: 240px;
-	margin: 0 auto;
+	position: absolute;
+	bottom: 0; 
+	width: 100%;	
+	height: 1px;
+}
+
+.mainmenuline
+{
+	width: 200px;
     background-color: #000000;
     border: 0 none;
-    color: #000000;
-    height: 1px;
+    margin: 0 auto;
+    height: 1px;	
+}
+
+.submenuline
+{
+	width: 100px;
+    background-color: #000000;
+    border: 0 none;
+    margin: 0 auto;
+    height: 1px;	
 }
