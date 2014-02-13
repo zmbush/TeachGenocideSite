@@ -43,15 +43,14 @@ ul, li
 .mainMenuItem
 {
 	position: relative;
-	height: 6.3%;
+	height: 40px;
 	cursor:pointer
 }
 
 .subMenuitem
 {
 	position: relative;
-	height: 6.3%;
-	display: none;
+	height: 40px;
 	cursor: pointer;
 }
 
@@ -102,4 +101,9 @@ ul, li
     border: 0 none;
     margin: 0 auto;
     height: 1px;	
+}
+
+.subMenuList
+{
+	display: none;
 }
