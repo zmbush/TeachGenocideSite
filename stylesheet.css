@@ -1,109 +1,125 @@
 html, body
 {
-	height: 100%;
-	margin: 0px;
-	padding: 0px;	
+    height: 100%;
+    margin: 0px;
+    padding: 0px;   
 }
 
 ul, li
 {
-	margin-left: 0px;
-	padding-left: 0px;
-	list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style-type: none;
 }
 
 #menubar
 {
-	float: left;
-	overflow: hidden;
+    float: left;
+    overflow: hidden;
     position: relative;
-	width: 300px;
-	height: 100%;
-	background-color: #f1da0e;
+    width: 300px;
+    height: 100%;
+    background-color: #f1da0e;
 }
 
 
 #logo
 {
-	margin-top: 30px;
-	margin-left: 75px;
-	margin-right: 75px;
-	margin-bottom: 30px;
-	width: 150px;
-	height: 150px;
+    margin-top: 30px;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 150px;
 }
 
 #menulist
 {
-	margin: 0px;
-	height: 600px;
-	text-align: center;
+    margin: 0px;
+    height: 600px;
+    text-align: center;
 }
 
 .mainMenuItem
 {
-	position: relative;
-	height: 40px;
-	cursor:pointer
+    position: relative;
+    height: 40px;
+    cursor:pointer
 }
 
 .subMenuitem
 {
-	position: relative;
-	height: 40px;
-	cursor: pointer;
+    position: relative;
+    height: 40px;
+    cursor: pointer;
 }
 
 .mainMenuText
 {
-	font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
 
-	display:inline-block;
+    display:inline-block;
     position: relative;
     top: 50%; 
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
+
+    /* not selectable */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .subMenuText
 {
-	font-family: 'Raleway', sans-serif;
-	font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
 
-	display:inline-block; 
+    display:inline-block; 
     position: relative;
     top: 40%; 
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
+
+    /* not selectable */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
 }
 
 .linebox
 {
-	position: absolute;
-	bottom: 0; 
-	width: 100%;	
-	height: 1px;
+    position: absolute;
+    bottom: 0; 
+    width: 100%;    
+    height: 1px;
 }
 
 .mainmenuline
 {
-	width: 200px;
+    width: 200px;
     background-color: #000000;
     border: 0 none;
     margin: 0 auto;
-    height: 1px;	
+    height: 1px;    
 }
 
 .submenuline
 {
-	width: 100px;
+    width: 100px;
     background-color: #000000;
     border: 0 none;
     margin: 0 auto;
-    height: 1px;	
+    height: 1px;    
 }
 
 .subMenuList
 {
-	display: none;
+    display: none;
 }

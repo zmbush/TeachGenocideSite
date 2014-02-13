@@ -1,25 +1,35 @@
 function on_load() 
 {
-	$('.mainMenuItem').click(function()
-	{
-		var currMMI = $(this)
-		var	currSML =  $(get_submenuList_class(currMMI))
+    $('.mainMenuItem').click(function()
+    {
+        var currMMI = $(this)
+        var currSML =  $(get_submenuList_class(currMMI))
 
-		if(currMMI.hasClass("clicked"))
-		{
-			currMMI.removeClass("clicked");
-			currSML.slideUp(300);
-		}	
-		else
-		{
-			currMMI.addClass("clicked");
-			currSML.slideDown(300);
-		}
+        if(currMMI.hasClass("clicked"))
+        {
+            currMMI.removeClass("clicked");
+            currSML.slideUp(300);
+        }   
+        else
+        {
+            $('.mainMenuItem').each(function()
+            {
+                var currMMI = $(this)
+                if(currMMI.hasClass("clicked"))
+                {
+                    var currSML = $(get_submenuList_class(currMMI))
+                    currMMI.removeClass("clicked");
+                    currSML.slideUp(300);
+                }
+            });
+            currMMI.addClass("clicked");
+            currSML.slideDown(300);
+        }
 
-	});
+    });
 }
 
 function get_submenuList_class(mainMenuItemClass)
 {
-	return ('.' + 'sub' + $(mainMenuItemClass).attr("class").split(/\s+/)[1]);
+    return ('.' + 'sub' + $(mainMenuItemClass).attr("class").split(/\s+/)[1]);
 }
