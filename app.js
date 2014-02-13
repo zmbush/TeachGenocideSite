@@ -9,6 +9,8 @@ function on_load()
         {
             currMMI.removeClass("clicked");
             currSML.slideUp(300);
+            currMMI.find('.mainlinebox').toggle();
+            currMMI.find('.mainopenlinebox').toggle();    
         }   
         else
         {
@@ -20,9 +22,14 @@ function on_load()
                     var currSML = $(get_submenuList_class(currMMI))
                     currMMI.removeClass("clicked");
                     currSML.slideUp(300);
+                    currMMI.find('.mainlinebox').toggle();
+                    currMMI.find('.mainopenlinebox').toggle();  
                 }
             });
+
             currMMI.addClass("clicked");
+            currMMI.find('.mainlinebox').toggle();
+            currMMI.find('.mainopenlinebox').toggle();
             currSML.slideDown(300);
         }
 

@@ -33,11 +33,16 @@ ul, li
     height: 150px;
 }
 
-#menulist
+.mainMenulist
 {
     margin: 0px;
     height: 600px;
     text-align: center;
+}
+
+.subMenuList
+{
+    display: none;
 }
 
 .mainMenuItem
@@ -104,36 +109,81 @@ ul, li
     left: 50px;
 }
 
+
 .sublinebox
 {
     position: absolute;
     bottom: 0; 
     width: 100px;    
     height: 3px;
-
     border-top: 1px solid;
     left: 100px;
 }
 
-.mainmenuline
-{
-    width: 200px;
-    background-color: #000000;
-    border: 0 none;
-    margin: 0 auto;
-    height: 1px;    
-}
-
-.submenuline
-{
-    width: 100px;
-    background-color: #000000;
-    border: 0 none;
-    margin: 0 auto;
-    height: 1px;    
-}
-
-.subMenuList
+.mainopenlinebox
 {
     display: none;
+    position: absolute;
+    width: 300px;
+    bottom: 0;
+    height: 3px;
 }
+
+.leftline
+{
+    position: absolute;
+    border-top: 1px solid;
+    width: 45px;
+    left: 100px;
+    float:left;
+}
+
+.rightline
+{
+    position: absolute;
+    border-top: 1px solid;
+    width: 45px;
+    right: 100px;
+    float:right;
+}
+
+.leftarrow
+{
+    position: absolute;
+    border-top: 1px solid;
+    width: 7px;
+    top: 2px;
+    left: 144px;
+    -webkit-transform: rotate(36deg);
+    -moz-transform: rotate(36deg);
+    -o-transform: rotate(36deg);
+    -ms-transform: rotate(36deg);
+    transform: rotate(36deg);
+}
+
+.rightarrow
+{
+    position: absolute;
+    border-top: 1px solid;
+    width: 7px;
+    top: 2px;
+    right: 144px;
+    -webkit-transform: rotate(-36deg);
+    -moz-transform: rotate(-36deg);
+    -o-transform: rotate(-36deg);
+    -ms-transform: rotate(-36deg);
+    transform: rotate(-36deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
