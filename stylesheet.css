@@ -60,7 +60,7 @@ ul, li
 
     display:inline-block;
     position: relative;
-    top: 50%; 
+    top: 45%; 
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 
@@ -93,12 +93,26 @@ ul, li
     user-select: none;    
 }
 
-.linebox
+.mainlinebox
 {
     position: absolute;
     bottom: 0; 
-    width: 100%;    
-    height: 1px;
+    width: 200px;    
+    height: 3px;
+
+    border-top: 1px solid;
+    left: 50px;
+}
+
+.sublinebox
+{
+    position: absolute;
+    bottom: 0; 
+    width: 100px;    
+    height: 3px;
+
+    border-top: 1px solid;
+    left: 100px;
 }
 
 .mainmenuline
