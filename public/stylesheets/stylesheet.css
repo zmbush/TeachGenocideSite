@@ -1,0 +1,189 @@
+html, body
+{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;   
+}
+
+ul, li
+{
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+#menubar
+{
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 100%;
+    background-color: #f1da0e;
+}
+
+
+#logo
+{
+    margin-top: 30px;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 150px;
+}
+
+.mainMenulist
+{
+    margin: 0px;
+    height: 600px;
+    text-align: center;
+}
+
+.subMenuList
+{
+    display: none;
+}
+
+.mainMenuItem
+{
+    position: relative;
+    height: 40px;
+    cursor:pointer
+}
+
+.subMenuitem
+{
+    position: relative;
+    height: 40px;
+    cursor: pointer;
+}
+
+.mainMenuText
+{
+    font-family: 'Raleway', sans-serif;
+
+    display:inline-block;
+    position: relative;
+    top: 45%; 
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+
+    /* not selectable */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.subMenuText
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+
+    display:inline-block; 
+    position: relative;
+    top: 40%; 
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+
+    /* not selectable */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+}
+
+.mainlinebox
+{
+    position: absolute;
+    bottom: 0; 
+    width: 200px;    
+    height: 3px;
+
+    border-top: 1px solid;
+    left: 50px;
+}
+
+
+.sublinebox
+{
+    position: absolute;
+    bottom: 0; 
+    width: 100px;    
+    height: 3px;
+    border-top: 1px solid;
+    left: 100px;
+}
+
+.mainopenlinebox
+{
+    display: none;
+    position: absolute;
+    width: 300px;
+    bottom: 0;
+    height: 3px;
+}
+
+.leftline
+{
+    position: absolute;
+    border-top: 1px solid;
+    width: 45px;
+    left: 100px;
+    float:left;
+}
+
+.rightline
+{
+    position: absolute;
+    border-top: 1px solid;
+    width: 45px;
+    right: 100px;
+    float:right;
+}
+
+.leftarrow
+{
+    position: absolute;
+    border-top: 1px solid;
+    width: 7px;
+    top: 2px;
+    left: 144px;
+    -webkit-transform: rotate(36deg);
+    -moz-transform: rotate(36deg);
+    -o-transform: rotate(36deg);
+    -ms-transform: rotate(36deg);
+    transform: rotate(36deg);
+}
+
+.rightarrow
+{
+    position: absolute;
+    border-top: 1px solid;
+    width: 7px;
+    top: 2px;
+    right: 144px;
+    -webkit-transform: rotate(-36deg);
+    -moz-transform: rotate(-36deg);
+    -o-transform: rotate(-36deg);
+    -ms-transform: rotate(-36deg);
+    transform: rotate(-36deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
