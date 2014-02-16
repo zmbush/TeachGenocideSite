@@ -1,0 +1,58 @@
+%ul.mainMenuList
+  %li.mainMenuItem.home
+    %span.mainMenuText Home
+    .mainlinebox
+  %li.mainMenuItem.resources
+    = render "item_content", locals: {text: 'Resources'}
+  %ul.subMenuList.subresources
+    = render "submenu", locals: {submenu_topics: [                     |
+                                   'Teaching Guides',                  |
+                                   'Survivor Accounts',                |
+                                   'Videos and Books',                 |
+                                   'Documents and Maps',               |
+                                   'U.S. News Accounts',               |
+                                   'Posters',                          |
+                                   'External Websites',                |
+                                   'Other Genocides',                  |
+                                   'State Educational Requirements']   |
+                                }                                      |
+
+  %li.mainMenuItem.backgroundGen
+    = render "item_content", locals: {text: 'Background on Armenian Genocide'}
+  %ul.subMenuList.subbackgroundGen
+    = render "submenu", locals: {submenu_topics: [                         |
+                                   'Brief History',                        |
+                                   'U.S. Ambassador to Turkey',            |
+                                   'Hitler and the Armenian Genocide',     |
+                                   'Denial',                               |
+                                   'Armenian Genocide Memorial Monument']  |
+                                }                                          |
+  %li.mainMenuItem.backgoundArm
+    = render "item_content", locals: {text: 'Background on Armenia'}
+  %ul.subMenuList.subbackgroundArm
+    = render "submenu", locals: {submenu_topics: [  |
+                                   'Brief History', |
+                                   'Resources']     |
+                                }                   |
+  %li.mainMenuItem.about
+    = render "item_content", locals: {text: 'About us'}
+  %ul.subMenuList.subabout
+    = render "submenu", locals: {submenu_topics: [          |
+                                   'Mission',               |
+                                   'Publications',          |
+                                   'Message to Teachers',   |
+                                   'Friends',               |
+                                   'Directors',             |
+                                   'Advisory Board',        |
+                                   'Staff and Offices',     |
+                                   'News']                  |
+                                }                           |
+  %li.mainMenuItem.contribute
+    = render "item_content", locals: {text: 'Contribute'}
+  %li.mainMenuItem.register
+    = render "item_content", locals: {text: 'Register'}
+  %ul.subMenuList.subregister
+    = render "submenu", locals: {submenu_topics: [      |
+                                   'For Supporters',    |
+                                   'For Educators']     |
+                                }                       |
