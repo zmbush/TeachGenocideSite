@@ -10,7 +10,7 @@ function on_load()
         if(currMMI.hasClass("clicked"))
         {
             currMMI.removeClass("clicked");
-            if (currSML.length != 0) 
+            if (currSML.length !== 0) 
             {
                 currSML.slideUp(300);
                 currMLB.show();
@@ -29,7 +29,7 @@ function on_load()
                 {
                     var currSML = getSubmenuListClass(currMMI);
                     currMMI.removeClass("clicked");
-                    if (currSML.length != 0)
+                    if (currSML.length !== 0)
                     {
                         currSML.slideUp(300);
                         currMOLB.hide();
@@ -39,7 +39,7 @@ function on_load()
             });
 
             currMMI.addClass("clicked");
-            if (currSML.length != 0) {
+            if (currSML.length !== 0) {
                 currMOLB.show();
                 currMLB.hide();
                 currSML.slideDown(300);
