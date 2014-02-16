@@ -98,7 +98,7 @@ ul, li
     user-select: none;    
 }
 
-.mainlinebox
+.mainLineBox
 {
     position: absolute;
     bottom: 0; 
@@ -110,7 +110,7 @@ ul, li
 }
 
 
-.sublinebox
+.subLineBox
 {
     position: absolute;
     bottom: 0; 
@@ -120,7 +120,7 @@ ul, li
     left: 100px;
 }
 
-.mainopenlinebox
+.mainOpenLineBox
 {
     display: none;
     position: absolute;
@@ -129,7 +129,7 @@ ul, li
     height: 3px;
 }
 
-.leftline
+.leftLine
 {
     position: absolute;
     border-top: 1px solid;
@@ -138,7 +138,7 @@ ul, li
     float:left;
 }
 
-.rightline
+.rightLine
 {
     position: absolute;
     border-top: 1px solid;
@@ -147,7 +147,7 @@ ul, li
     float:right;
 }
 
-.leftarrow
+.leftArrow
 {
     position: absolute;
     border-top: 1px solid;
@@ -161,7 +161,7 @@ ul, li
     transform: rotate(36deg);
 }
 
-.rightarrow
+.rightArrow
 {
     position: absolute;
     border-top: 1px solid;
