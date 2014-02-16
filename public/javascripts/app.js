@@ -21,7 +21,7 @@ function on_load()
         {
             $('.mainMenuItem').each(function()
             {
-                var currMMI = $(this)
+                var currMMI = $(this);
                 var currMLB = currMMI.find('.mainLineBox');
                 var currMOLB = currMMI.find('.mainOpenLineBox');
 
@@ -29,16 +29,17 @@ function on_load()
                 {
                     var currSML = getSubmenuListClass(currMMI);
                     currMMI.removeClass("clicked");
-                    if (currSML.length != 0) {
+                    if (currSML.length != 0)
+                    {
                         currSML.slideUp(300);
-                        currMOLB.show();
-                        currMLB.hide();
+                        currMOLB.hide();
+                        currMLB.show();
                     }
                 }
             });
 
             currMMI.addClass("clicked");
-            if (currSML.length !== 0) {
+            if (currSML.length != 0) {
                 currMOLB.show();
                 currMLB.hide();
                 currSML.slideDown(300);
