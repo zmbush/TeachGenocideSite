@@ -10,11 +10,15 @@ var React = require('react/addons');
 
 var app = express();
 
+var pages = require('./dist/pages');
+
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.use(function(req, res, next) {
-  if (req.url.indexOf("/api") === -1) {
-    res.send(React.renderComponentToString(React.DOM.div()));
+  var u = req.url.replace("/", "");
+  console.log(u);
+  if (u in pages) {
+    res.send(React.renderComponentToStaticMarkup(pages[u]()));
   } else {
     next();
   }
